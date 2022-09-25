@@ -1,0 +1,29 @@
+<footer class="footer">
+  <div class="footer-body container">
+    <!-- Logo -->
+    <div class="row footer-logo-row">
+      <div>
+        <%= link to: chain_path(@conn, :show), class: "footer-brand" do %>
+          <img class="footer-logo" src="<%= logo_footer() %>" alt="Fuse" />
+        <% end %>
+      </div>
+    </div>
+
+    <div class="row">
+      <div>
+        <p class="footer-info-text"><%= gettext("The Fuse network is a permissionless and border-less public ledger designed for easy integration of everyday payments.") %></p>
+        <div class="footer-social-icons">
+          <a href="https://github.com/fuseio" rel="noreferrer" target="_blank" class="footer-social-icon" title='<%= gettext("Github") %>'>
+            <div class="footer-social-icon-container fontawesome-icon github"></div>
+          </a>
+          <a href="https://twitter.com/Fuse_network" rel="noreferrer" target="_blank" class="footer-social-icon" title='<%= gettext("Twitter") %>'>
+            <div class="footer-social-icon-container fontawesome-icon twitter"></div>
+          </a>
+          <a href="https://t.me/fuseio" rel="noreferrer" target="_blank" class="footer-social-icon" title='<%= gettext("Telegram") %>'>
+            <div class="footer-social-icon-container fontawesome-icon telegram"></div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
